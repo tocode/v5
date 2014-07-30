@@ -1,0 +1,9 @@
+varying vec2 v_texcood;
+uniform sampler2D s_texture;
+
+void main()																
+{					
+	float depth = texture2D(s_texture,v_texcood).x;
+	depth = 1-(1-depth)*30;
+	gl_FragColor = depth*0.8;							
+}																			

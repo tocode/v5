@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36C125A7-C442-463A-8815-94908A5C4086}</ProjectGuid>
+    <RootNamespace>GL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\Dropbox\V5\Source;D:\Dropbox\freetype-2.4.8\include\freetype;D:\Dropbox\freetype-2.4.8\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Dropbox\V5\Dependencies\FreeImage\Dist;D:\Dropbox\V5\Dependencies\freetype-2.4.8\include;D:\Dropbox\V5\Dependencies\glew-1.7.0\include;D:\Dropbox\V5\Dependencies\freeglut-2.8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Dropbox\V5\Dependencies\FreeImage\Dist;D:\Dropbox\V5\Dependencies\freetype-2.4.8\objs\win32\vc2010;D:\Dropbox\V5\Dependencies\glew-1.7.0\lib;D:\Dropbox\V5\Dependencies\freeglut-2.8.0\lib\x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype248_D.lib;glew32.lib;freeglut_static.lib;freeimage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\App.h" />
+    <ClInclude Include="..\..\..\Source\Button.h" />
+    <ClInclude Include="..\..\..\Source\Canvas.h" />
+    <ClInclude Include="..\..\..\Source\CanvasApp.h" />
+    <ClInclude Include="..\..\..\Source\Common.h" />
+    <ClInclude Include="..\..\..\Source\CubeData.h" />
+    <ClInclude Include="..\..\..\Source\Effect.h" />
+    <ClInclude Include="..\..\..\Source\Font.h" />
+    <ClInclude Include="..\..\..\Source\GestureRecognizer.h" />
+    <ClInclude Include="..\..\..\Source\GL.h" />
+    <ClInclude Include="..\..\..\Source\HLayout.h" />
+    <ClInclude Include="..\..\..\Source\HList.h" />
+    <ClInclude Include="..\..\..\Source\HSlider.h" />
+    <ClInclude Include="..\..\..\Source\IDMap.h" />
+    <ClInclude Include="..\..\..\Source\Image.h" />
+    <ClInclude Include="..\..\..\Source\Index.h" />
+    <ClInclude Include="..\..\..\Source\IndexBuffer.h" />
+    <ClInclude Include="..\..\..\Source\Input.h" />
+    <ClInclude Include="..\..\..\Source\Label.h" />
+    <ClInclude Include="..\..\..\Source\Mathematics.h" />
+    <ClInclude Include="..\..\..\Source\Matrix.h" />
+    <ClInclude Include="..\..\..\Source\Matrix3.h" />
+    <ClInclude Include="..\..\..\Source\Matrix4.h" />
+    <ClInclude Include="..\..\..\Source\Mesh.h" />
+    <ClInclude Include="..\..\..\Source\Pass.h" />
+    <ClInclude Include="..\..\..\Source\Picture.h" />
+    <ClInclude Include="..\..\..\Source\Pipeline.h" />
+    <ClInclude Include="..\..\..\Source\ProgressBar.h" />
+    <ClInclude Include="..\..\..\Source\Quad2D.h" />
+    <ClInclude Include="..\..\..\Source\Quaternion.h" />
+    <ClInclude Include="..\..\..\Source\SecureTextField.h" />
+    <ClInclude Include="..\..\..\Source\Signal.h" />
+    <ClInclude Include="..\..\..\Source\TextField.h" />
+    <ClInclude Include="..\..\..\Source\Texture.h" />
+    <ClInclude Include="..\..\..\Source\TextureFactory.h" />
+    <ClInclude Include="..\..\..\Source\UIApp.h" />
+    <ClInclude Include="..\..\..\Source\UIComponent.h" />
+    <ClInclude Include="..\..\..\Source\UIContainer.h" />
+    <ClInclude Include="..\..\..\Source\UILayout.h" />
+    <ClInclude Include="..\..\..\Source\UIRoot.h" />
+    <ClInclude Include="..\..\..\Source\Uniform.h" />
+    <ClInclude Include="..\..\..\Source\Vector.h" />
+    <ClInclude Include="..\..\..\Source\Vector3.h" />
+    <ClInclude Include="..\..\..\Source\Vector4.h" />
+    <ClInclude Include="..\..\..\Source\VertexBuffer.h" />
+    <ClInclude Include="..\..\..\Source\VLayout.h" />
+    <ClInclude Include="..\..\..\Source\VSlider.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Canvas.cpp" />
+    <ClCompile Include="..\..\..\Source\GL.cpp" />
+    <ClCompile Include="..\..\..\Source\Mathematics.cpp" />
+    <ClCompile Include="..\..\..\Source\Matrix3.cpp" />
+    <ClCompile Include="..\..\..\Source\Matrix4.cpp" />
+    <ClCompile Include="..\..\..\Source\UIComponent.cpp" />
+    <ClCompile Include="..\..\..\Source\UIRoot.cpp" />
+    <ClCompile Include="..\..\..\Source\Vector3.cpp" />
+    <ClCompile Include="..\..\..\Source\Vector4.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\Matrix.inl" />
+    <None Include="..\..\..\Source\Vector.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

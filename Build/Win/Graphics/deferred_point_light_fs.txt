@@ -1,0 +1,123 @@
+varying vec3 v_position;															
+varying vec3 v_normal;																
+varying vec2 v_texcood;	
+														
+uniform sampler2D s_texture;														
+uniform vec3 u_eye;																
+
+uniform sampler2D s_position;
+uniform sampler2D s_normal;
+uniform sampler2D s_texcood;
+
+struct DirectionalLight															
+{																					
+	vec3 color;																		
+	vec3 direction;																	
+	float ambient_intensity;														
+	float diffuse_intensity;														
+};																					
+uniform int dlight_enable;															
+uniform DirectionalLight dlight;	
+												
+struct PointLight																	
+{																					
+	vec3 color;																		
+	vec3 position;																	
+	float ambient_intensity;														
+	float diffuse_intensity;														
+	float constant_attenuation;														
+	float linear_attenuation;														
+	float exp_attenuation;															
+};																					
+uniform PointLight plights[8];														
+uniform int plights_num;
+															
+struct SpotLight
+{
+	vec3 color;
+	vec3 position;
+	float ambient_intensity;														
+	float diffuse_intensity;														
+	float constant_attenuation;														
+	float linear_attenuation;														
+	float exp_attenuation;		
+	vec3 direction;
+	float cutoff;
+};
+uniform int slights_num;
+uniform SpotLight slights[8];
+
+vec3 CalculateAmbient(vec3 light_color,float light_intensity)						
+{																					
+	return light_color * light_intensity;												
+}																					
+vec3 CalculateDiffuse(vec3 light_color,vec3 light_direction,float light_intensity,vec3 normal)  
+{																					
+	float factor = dot(normalize(normal),normalize(-light_direction));							
+	return light_color * light_intensity * clamp(factor,0,1);																					
+}																					
+vec3 CalculateSpecular(vec3 light_color,vec3 light_direction,float material_intensity,vec3 normal,vec3 pixel_to_eye)
+{																					
+	float light_reflect = reflect(normalize(light_direction),normalize(normal));				
+	float factor = pow(clamp(dot(normalize(pixel_to_eye),normalize(light_reflect)),0,1),32);				
+	return light_color * material_intensity * clamp(factor,0,1);					
+}																					
+vec3 CalculateDirectionalLight(DirectionalLight dlight,float material_intensity,vec3 position,vec3 normal,vec3 eye)			
+{																					
+	vec3 ambient = CalculateAmbient(dlight.color, dlight.ambient_intensity);			
+	vec3 diffuse = CalculateDiffuse(dlight.color, dlight.direction, dlight.diffuse_intensity, normal);  
+	vec3 specular = vec3(0);
+	if (diffuse!=vec3(0))
+		specular = CalculateSpecular(dlight.color, dlight.direction, material_intensity, normal, eye-position);  
+	return ambient + diffuse + specular;						
+}																					
+vec3 CalculatePointLight(PointLight plight,float material_intensity,vec3 position,vec3 normal,vec3 eye)							
+{																					
+	vec3 plight_direction = position-plight.position;								
+	float distance = length(position-plight.position);								
+	vec3 ambient = CalculateAmbient(plight.color, plight.ambient_intensity);			
+	vec3 diffuse = CalculateDiffuse(plight.color, plight_direction, plight.diffuse_intensity, normal);  
+	vec3 specular = vec3(0);														
+	if (diffuse!=vec3(0))																
+		specular = CalculateSpecular(plight.color, plight_direction, material_intensity, normal, eye-position);  
+	float attenuation = plight.constant_attenuation +								
+						plight.linear_attenuation * distance +						
+						plight.exp_attenuation * distance * distance; 				
+	return ( ambient + diffuse + specular )/attenuation;													
+}
+vec3 CalculateSpotLight(SpotLight slight, float material_intensity, vec3 position, vec3 normal, vec3 eye)
+{
+	vec3 light_to_pixel = position - slight.position;
+	float factor = dot(normalize(light_to_pixel),normalize(slight.direction));
+	vec3 spot_light = vec3(0);
+	if (factor>cos(slight.cutoff))
+	{
+		PointLight plight;
+		plight.color = slight.color;
+		plight.position = slight.position;															
+		plight.ambient_intensity = slight.ambient_intensity;
+		plight.diffuse_intensity = slight.diffuse_intensity;														
+		plight.constant_attenuation = slight.constant_attenuation;														
+		plight.linear_attenuation = slight.linear_attenuation;														
+		plight.exp_attenuation = slight.exp_attenuation;	
+		spot_light = CalculatePointLight(plight, material_intensity, position, normal, eye) * (1-(1-factor)/(1-slight.cutoff));
+	}
+	return spot_light;
+}																					
+void main()																		
+{	
+	vec2 screencoord = gl_FragCoord.xy/vec2(640,480);
+	vec3 position = texture2D(s_position,screencoord);
+	vec3 normal = texture2D(s_normal,screencoord);
+	vec2 texcood = texture2D(s_texcood,screencoord);
+	vec4 color = texture2D(s_texture,texcood);
+	
+	vec3 light_sum = vec3(0,0,0);												
+	if (dlight_enable>0)															
+		light_sum += CalculateDirectionalLight(dlight,0.2,position,normal,u_eye); 
+	for (int i=0; i<plights_num; i++)												
+		light_sum += CalculatePointLight(plights[i],0.2,position,normal,u_eye);
+	for (int i=0; i<slights_num; i++)
+		light_sum += CalculateSpotLight(slights[i],0.2,position,normal,u_eye);
+	gl_FragColor = color * vec4(light_sum,1);
+}																					

@@ -1,0 +1,30 @@
+uniform sampler2D s_position;
+uniform sampler2D s_normal;
+uniform sampler2D s_texcood;
+
+float ambientocclusion(vec3 p, vec3 n, vec3 sp)
+{
+	vec3 v = sp - p;
+	float d = length(v);
+	return max(0.0,dot(n,v))*(1.0/(1.0+d))*4;
+}
+vec3 GetPosition(vec2 uv)
+{
+	return texture2D(s_position,uv);
+}
+void main()																		
+{	
+	vec2 u=vec2(1.0/640,0);
+	vec2 v=vec2(0,1.0/480);
+	vec2 screencoord = gl_FragCoord.xy/vec2(640,480);
+	vec3 position = texture2D(s_position,screencoord);
+	vec3 normal = texture2D(s_normal,screencoord);
+	vec2 texcood = texture2D(s_texcood,screencoord);
+	float ao;
+	ao += ambientocclusion(position,normal,GetPosition(screencoord+2*u));
+	ao += ambientocclusion(position,normal,GetPosition(screencoord+2*v));
+	ao += ambientocclusion(position,normal,GetPosition(screencoord-2*u));
+	ao += ambientocclusion(position,normal,GetPosition(screencoord-2*v));
+	ao = 1 - ao/4;
+	gl_FragColor = ao;
+}																					

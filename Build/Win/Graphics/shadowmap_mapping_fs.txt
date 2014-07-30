@@ -1,0 +1,22 @@
+varying vec3 v_position;
+varying vec3 v_normal;
+varying vec2 v_texcood;
+varying vec4 v_lightspace_pos;	
+uniform sampler2D s_shadowmap;
+uniform sampler2D s_texture;
+
+void main()																
+{					
+	vec3 light_NDC_pos = v_lightspace_pos.xyz / v_lightspace_pos.w;
+	float u = 0.5 * light_NDC_pos.x + 0.5;
+	float v = 0.5 * light_NDC_pos.y + 0.5;
+	float z = 0.5 * light_NDC_pos.z + 0.5;
+	
+	float depth = texture2D(s_shadowmap,vec2(u,v)).x;
+	float factor;
+	if (depth < z)
+		factor = 0.5;
+	else
+		factor = 1;
+	gl_FragColor = 0.5*factor*vec4(1,1,1,1);						
+}																			

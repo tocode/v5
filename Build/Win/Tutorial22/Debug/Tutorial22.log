@@ -1,0 +1,86 @@
+﻿生成启动时间为 2013/10/24 13:00:32。
+     1>项目“D:\V5\Build\Win\Tutorial22\Tutorial22.vcxproj”在节点 4 上(rebuild 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\Tutorial22.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Dropbox\V5\Dependencies\glew-1.7.0\include" /I"D:\Dropbox\V5\Dependencies\freeglut-2.8.0\include" /I"D:\Dropbox\V5\Dependencies\assimp--2.0.863-sdk\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt camera.cpp glut_backend.cpp lighting_technique.cpp math_3d.cpp mesh.cpp pipeline.cpp technique.cpp texture.cpp tutorial22.cpp
+         tutorial22.cpp
+     1>d:\dropbox\v5\dependencies\assimp--2.0.863-sdk\include\aipostprocess.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         texture.cpp
+         technique.cpp
+         pipeline.cpp
+         mesh.cpp
+     1>d:\dropbox\v5\dependencies\assimp--2.0.863-sdk\include\aipostprocess.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         math_3d.cpp
+     1>d:\v5\build\win\tutorial22\math_3d.cpp(43): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\math_3d.cpp(44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\math_3d.cpp(74): warning C4244: “初始化”: 从“double”转换到“const float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\math_3d.cpp(75): warning C4244: “初始化”: 从“double”转换到“const float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\math_3d.cpp(76): warning C4244: “初始化”: 从“double”转换到“const float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\math_3d.cpp(124): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         lighting_technique.cpp
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(234): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(237): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(240): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(243): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(246): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(249): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(252): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(269): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(272): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(275): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(278): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(281): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(284): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(287): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(290): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(293): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\v5\build\win\tutorial22\lighting_technique.cpp(382): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         glut_backend.cpp
+     1>d:\v5\build\win\tutorial22\glut_backend.cpp(83): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         camera.cpp
+     1>d:\v5\build\win\tutorial22\camera.cpp(63): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\camera.cpp(67): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\camera.cpp(74): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\camera.cpp(78): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\v5\build\win\tutorial22\camera.cpp(82): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\V5\Build\Win\Debug\Tutorial22.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Dropbox\V5\Dependencies\assimp--2.0.863-sdk\lib\assimp_debug-dll_win32" /LIBPATH:"D:\Dropbox\V5\Dependencies\glew-1.7.0\lib" /LIBPATH:"D:\Dropbox\V5\Dependencies\freeglut-2.8.0\lib\x86\Debug" assimp.lib glew32.lib freeglut_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Tutorial22.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\V5\Build\Win\Debug\Tutorial22.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\V5\Build\Win\Debug\Tutorial22.lib" /MACHINE:X86 Debug\camera.obj
+         Debug\glut_backend.obj
+         Debug\lighting_technique.obj
+         Debug\math_3d.obj
+         Debug\mesh.obj
+         Debug\pipeline.obj
+         Debug\technique.obj
+         Debug\texture.obj
+         Debug\tutorial22.obj
+     1>camera.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/INCREMENTAL:NO”规范)
+         Tutorial22.vcxproj -> D:\V5\Build\Win\Debug\Tutorial22.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\V5\Build\Win\Debug\Tutorial22.exe;#1" /manifest Debug\Tutorial22.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Tutorial22.unsuccessfulbuild”。
+         正在对“Debug\Tutorial22.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\V5\Build\Win\Tutorial22\Tutorial22.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.14

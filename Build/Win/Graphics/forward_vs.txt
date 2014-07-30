@@ -1,0 +1,16 @@
+attribute vec3 a_position;													
+attribute vec3 a_normal;													
+attribute vec2 a_texcood;													
+varying vec3 v_position;													
+varying vec3 v_normal;														
+varying vec2 v_texcood;													
+uniform mat4 u_wvp;														
+uniform mat4 u_world;														
+uniform vec3 u_eye;														
+void main()																
+{																			
+	gl_Position = u_wvp * vec4(a_position,1);								
+	v_position = u_world * vec4(a_position,1);								
+	v_normal = u_world * vec4(a_normal,0);									
+	v_texcood = a_texcood;													
+}																			

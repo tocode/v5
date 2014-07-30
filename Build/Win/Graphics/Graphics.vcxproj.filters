@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Mathematics">
+      <UniqueIdentifier>{e2220898-c362-4f20-8471-456f822fe57a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GL">
+      <UniqueIdentifier>{7fc33703-b6d5-43b3-aa43-88d6dce75b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frame">
+      <UniqueIdentifier>{22fac3b0-d35f-45bb-abee-588ac93e39de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Apps">
+      <UniqueIdentifier>{5b01d0ae-e0fc-4885-baa0-084bbf8c6946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory">
+      <UniqueIdentifier>{d49a1be7-39b1-4195-a593-b8e7e3dd6cd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Matrix.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Mathematics.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Vector3.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Matrix3.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Matrix4.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Vector4.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Vector.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\GL.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\IDMap.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Common.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\App.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\VertexBuffer.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Canvas.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Effect.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\CubeData.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\GameObject.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Pass.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Mesh.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\CubeApp.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Input.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\IndexBuffer.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Index.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Uniform.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Texture.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\FrameApp.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\TextureFactory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\MeshFactory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Camera.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\SkeletonAnimation.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\SkyBox.h" />
+    <ClInclude Include="..\..\..\Source\Timer.h" />
+    <ClInclude Include="..\..\..\Source\ForwardLighting.h" />
+    <ClInclude Include="..\..\..\Source\DemoApp.h" />
+    <ClInclude Include="..\..\..\Source\ForwardApp.h">
+      <Filter>Apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\DeferredApp.h">
+      <Filter>Apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ShadowMap.h" />
+    <ClInclude Include="..\..\..\source\ShadowMapApp.h">
+      <Filter>Apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\DeferredShading.h" />
+    <ClInclude Include="..\..\..\Source\SSAO.h" />
+    <ClInclude Include="..\..\..\Source\SSAOApp.h">
+      <Filter>Apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\PPFilter.h" />
+    <ClInclude Include="..\..\..\source\DownSampler.h" />
+    <ClInclude Include="..\..\..\source\HDRApp.h" />
+    <ClInclude Include="..\..\..\Source\Program.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Matrix3.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Matrix4.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Vector4.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Vector3.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Mathematics.cpp">
+      <Filter>Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\GL.cpp">
+      <Filter>GL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Canvas.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Apps</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\Matrix.inl">
+      <Filter>Mathematics</Filter>
+    </None>
+    <None Include="..\..\..\Source\Vector.inl">
+      <Filter>Frame</Filter>
+    </None>
+  </ItemGroup>
+</Project>

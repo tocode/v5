@@ -1,0 +1,88 @@
+﻿Build started 5/27/2012 1:19:50 AM.
+     1>Project "D:\Dropbox\V5\Build\Win\Tutorial22\Lesson22.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Lesson22.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\Lesson22.unsuccessfulbuild".
+       ClCompile:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Dropbox\V5\Dependencies\glew-1.7.0\include" /I"D:\Dropbox\V5\Dependencies\freeglut-2.8.0\include" /I"D:\Dropbox\V5\Dependencies\assimp--2.0.863-sdk\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt camera.cpp glut_backend.cpp lighting_technique.cpp math_3d.cpp mesh.cpp pipeline.cpp technique.cpp texture.cpp tutorial22.cpp
+         tutorial22.cpp
+     1>d:\dropbox\v5\dependencies\assimp--2.0.863-sdk\include\aipostprocess.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         texture.cpp
+         technique.cpp
+         pipeline.cpp
+         mesh.cpp
+     1>d:\dropbox\v5\dependencies\assimp--2.0.863-sdk\include\aipostprocess.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+         math_3d.cpp
+     1>d:\dropbox\v5\build\win\tutorial22\math_3d.cpp(43): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\math_3d.cpp(44): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\math_3d.cpp(74): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\math_3d.cpp(75): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\math_3d.cpp(76): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\math_3d.cpp(124): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         lighting_technique.cpp
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(234): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(237): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(240): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(243): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(246): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(249): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(252): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(269): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(272): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(275): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(278): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(281): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(284): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(287): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(290): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(293): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\dropbox\v5\build\win\tutorial22\lighting_technique.cpp(382): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         glut_backend.cpp
+     1>d:\dropbox\v5\build\win\tutorial22\glut_backend.cpp(83): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         camera.cpp
+     1>d:\dropbox\v5\build\win\tutorial22\camera.cpp(63): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\camera.cpp(67): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\camera.cpp(74): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\camera.cpp(78): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\dropbox\v5\build\win\tutorial22\camera.cpp(82): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dropbox\V5\Build\Win\Debug\Lesson22.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\Dropbox\V5\Dependencies\assimp--2.0.863-sdk\lib\assimp_debug-dll_win32" /LIBPATH:"D:\Dropbox\V5\Dependencies\glew-1.7.0\lib" /LIBPATH:"D:\Dropbox\V5\Dependencies\freeglut-2.8.0\lib\x86\Debug" assimp.lib glew32.lib freeglut_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Lesson22.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Dropbox\V5\Build\Win\Debug\Lesson22.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dropbox\V5\Build\Win\Debug\Lesson22.lib" /MACHINE:X86 Debug\camera.obj
+         Debug\glut_backend.obj
+         Debug\lighting_technique.obj
+         Debug\math_3d.obj
+         Debug\mesh.obj
+         Debug\pipeline.obj
+         Debug\technique.obj
+         Debug\texture.obj
+         Debug\tutorial22.obj
+     1>camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         Lesson22.vcxproj -> D:\Dropbox\V5\Build\Win\Debug\Lesson22.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Dropbox\V5\Build\Win\Debug\Lesson22.exe;#1" /manifest Debug\Lesson22.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Lesson22.unsuccessfulbuild".
+         Touching "Debug\Lesson22.lastbuildstate".
+     1>Done Building Project "D:\Dropbox\V5\Build\Win\Tutorial22\Lesson22.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.21

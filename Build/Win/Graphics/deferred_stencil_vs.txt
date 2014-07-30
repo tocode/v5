@@ -1,0 +1,8 @@
+attribute vec3 a_position;								
+attribute vec3 a_normal;
+attribute vec2 a_texcood;																		
+uniform mat4 u_wvp;														
+void main()					
+{	
+	gl_Position = u_wvp * vec4(a_position,1);					
+}																			

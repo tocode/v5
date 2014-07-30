@@ -1,0 +1,9 @@
+attribute vec3 a_position;	
+attribute vec2 a_texcood;																																					
+varying vec2 v_texcood;												
+
+void main()																
+{								
+	v_texcood = a_texcood;
+	gl_Position = vec4(a_position,1);										
+}																			

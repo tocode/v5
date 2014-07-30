@@ -1,0 +1,14 @@
+uniform sampler2D s_input;
+varying vec2 v_texcood;
+void main()																		
+{	
+	vec2 u=vec2(1.0/640,0);
+	vec2 v=vec2(0,1.0/480);
+
+	vec3 sum = 0;
+	for (int i=-1; i<2; i++)
+		for (int j=-1; j<2; j++)
+			sum += texture2D(s_input,v_texcood + i*v + j*u);
+	sum /= 16;
+	gl_FragColor = vec4(sum,1);
+}																					

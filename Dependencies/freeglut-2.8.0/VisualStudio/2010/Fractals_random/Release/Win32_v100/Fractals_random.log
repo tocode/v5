@@ -1,0 +1,22 @@
+﻿生成启动时间为 2012/2/26 20:18:51。
+     1>项目“D:\Dropbox\Engine5\freeglut-2.8.0\VisualStudio\2010\Fractals_random\Fractals_random.vcxproj”在节点 3 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\Win32_v100\Fractals_random.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\Win32_v100\\" /Fd"Release\Win32_v100\vc100.pdb" /Gd /TC /wd4996 /analyze- /errorReport:prompt ..\..\..\progs\demos\Fractals_random\fractals_random.c
+         fractals_random.c
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\progs\demos\x86\release_dll\Fractals_random.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\..\lib\x86\ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Win32_v100\Fractals_random.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"D:\Dropbox\Engine5\freeglut-2.8.0\progs\demos\x86\release_dll\Fractals_random.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\progs\demos\x86\release_dll\Fractals_random.lib" /MACHINE:X86 Release\Win32_v100\fractals_random.obj
+         正在生成代码
+         已完成代码的生成
+         Fractals_random.vcxproj -> D:\Dropbox\Engine5\freeglut-2.8.0\VisualStudio\2010\Fractals_random\..\..\..\progs\demos\x86\release_dll\Fractals_random.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\..\progs\demos\x86\release_dll\Fractals_random.exe;#1" /manifest Release\Win32_v100\Fractals_random.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Release\Win32_v100\Fractals_random.unsuccessfulbuild”。
+         正在对“Release\Win32_v100\Fractals_random.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Dropbox\Engine5\freeglut-2.8.0\VisualStudio\2010\Fractals_random\Fractals_random.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.46

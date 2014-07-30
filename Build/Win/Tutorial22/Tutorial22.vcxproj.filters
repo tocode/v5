@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="pipeline.cpp" />
+    <ClCompile Include="technique.cpp" />
+    <ClCompile Include="math_3d.cpp" />
+    <ClCompile Include="lighting_technique.cpp" />
+    <ClCompile Include="glut_backend.cpp" />
+    <ClCompile Include="tutorial22.cpp" />
+    <ClCompile Include="texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="callbacks.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="glut_backend.h" />
+    <ClInclude Include="lighting_technique.h" />
+    <ClInclude Include="pipeline.h" />
+    <ClInclude Include="technique.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="math_3d.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="mesh.h" />
+  </ItemGroup>
+</Project>
