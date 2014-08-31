@@ -5,3 +5,4 @@ Implemented features are Sky Box, Forward Lighting, Deffered Shading, SSAO, Shad
 
 2 years ago, I did it for satisfying myself. Now I just want it is useful, so please feel free to do something with it. :-)
 
+see screen shot here: https://github.com/tocode/v5/blob/master/v5.png
